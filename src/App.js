@@ -10,15 +10,15 @@ function App() {
 
   return (
     <div className="App">
-      <div className="button-container default-button">
+      <div className="button-container" id="default-button">
         <p>{buttonHeaders.default}</p>
         <Button variant="default" />
       </div>
-      <div className="button-container outline-button">
+      <div className="button-container" id="outline-button">
         <p>{buttonHeaders.outline}</p>
         <Button variant="outline" />
       </div>
-      <div className="button-container text-button">
+      <div className="button-container" id="text-button">
         <p>{buttonHeaders.text}</p>
         <Button variant="text" />
       </div>
