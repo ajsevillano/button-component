@@ -6,7 +6,7 @@ import Button from './components/Button/Index';
 function App() {
   const [button, setbutton] = useState({
     variant: 'default',
-    boxShadow: true,
+    boxShadow: false,
     disabled: false,
   });
 
@@ -73,6 +73,12 @@ function App() {
             onChange={handleDisabledCheckBox}
           />
           <label htmlFor="disabled">Disabled?</label>
+        </div>
+        <div className="color-selector-container">
+          <div>Default</div>
+          <div>Primary</div>
+          <div>Secundary</div>
+          <div>Danger</div>
         </div>
       </div>
       <div className="buttons-display-container">

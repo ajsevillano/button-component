@@ -1,4 +1,5 @@
 @use './components/Button/button';
+@use './components/Color-picker/color-picker';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 
 * {
@@ -32,7 +33,7 @@ h1 {
 
 select {
   min-width: 100px;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border: solid 1px #dbdbdb;
   outline: none;
   font-family: 'Noto Sans JP', sans-serif;
@@ -40,6 +41,10 @@ select {
   font-weight: 500;
   padding: 5px 0 5px 5px;
   text-align: center;
+}
+
+label {
+  padding: 0 1.5rem 0 0.3rem;
 }
 
 .checkbox-input-container {
