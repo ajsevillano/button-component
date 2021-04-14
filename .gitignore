@@ -24,3 +24,6 @@ yarn-error.log*
 
 ##Css map
 *.css.map
+
+##Scripts
+acp.sh
