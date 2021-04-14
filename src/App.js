@@ -6,6 +6,7 @@ function App() {
     default: '<Button />',
     outline: '<Button variant=”outline” />',
     text: '<Button variant=”text” />',
+    disableshadow: '<Button disableShadow />',
   };
 
   return (
@@ -21,6 +22,10 @@ function App() {
       <div className="button-container" id="text-button">
         <p>{buttonHeaders.text}</p>
         <Button variant="text" />
+      </div>
+      <div className="button-container" id="disableShadow-button">
+        <p>{buttonHeaders.disableshadow}</p>
+        <Button variant="disableShadow" />
       </div>
     </div>
   );

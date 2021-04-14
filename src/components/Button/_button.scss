@@ -8,6 +8,10 @@
   &:hover {
     cursor: pointer;
   }
+  &:disabled {
+    background: #e0e0e0;
+    color: #9e9e9e;
+  }
 }
 
 .default {
@@ -43,4 +47,11 @@
   :focus {
     background: rgba(41, 98, 255, 0.1);
   }
+}
+
+.disableShadow {
+  background: #3d5afe;
+  border: none;
+  border-radius: 6px;
+  color: white;
 }
