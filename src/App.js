@@ -1,7 +1,11 @@
+import { useState } from 'react';
+
 import './App.css';
 import Button from './components/Button/Index';
 
 function App() {
+  const [button, setbutton] = useState({ variant: 'default' });
+
   const buttonHeaders = {
     default: 'Default',
     outline: 'Variant outline',
@@ -11,11 +15,24 @@ function App() {
     textDisabled: 'Variant text(disabled)',
   };
 
+  const HandleChanges = (e) => {
+    const Variant = {
+      ...button,
+      [e.target.name]: e.target.value,
+    };
+    setbutton(Variant);
+  };
+
   return (
     <div className="App">
       <div className="custom-button-container">
         <p>Custom button</p>
-        <Button variant="default" />
+        <Button variant={button.variant} />
+        <select name="variant" onChange={HandleChanges}>
+          <option value="default">Default</option>
+          <option value="outline">OutLine</option>
+          <option value="text">Text</option>
+        </select>
       </div>
       <div className="buttons-display-container">
         <div className="button-container" id="default-button">
