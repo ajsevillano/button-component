@@ -9,10 +9,8 @@
 
 .App {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
-  flex-wrap: wrap;
-  align-content: center;
 }
 
 body {
@@ -21,14 +19,32 @@ body {
   font-weight: 500;
 }
 
+p {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.buttons-display-container {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.custom-button-container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .button-container {
   padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  p {
-    padding-bottom: 1rem;
-    text-align: center;
-  }
 }
