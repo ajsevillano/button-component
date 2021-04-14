@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Button = ({ variant }) => {
+const Button = ({ variant, disabled }) => {
   return (
     <div>
-      <button className={`btn ${variant}`}>Default</button>
+      <button className={`btn ${variant}`} disabled={disabled}>
+        Default
+      </button>
     </div>
   );
 };

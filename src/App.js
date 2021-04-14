@@ -3,10 +3,12 @@ import Button from './components/Button/Index';
 
 function App() {
   const buttonHeaders = {
-    default: '<Button />',
-    outline: '<Button variant=”outline” />',
-    text: '<Button variant=”text” />',
-    disableshadow: '<Button disableShadow />',
+    default: 'Default',
+    outline: 'Variant outline',
+    text: 'Variant text',
+    disableshadow: 'Disable shadow',
+    disabled: 'Default(disabled)',
+    textDisabled: 'Variant text(disabled)',
   };
 
   return (
@@ -26,6 +28,14 @@ function App() {
       <div className="button-container" id="disableShadow-button">
         <p>{buttonHeaders.disableshadow}</p>
         <Button variant="disableShadow" />
+      </div>
+      <div className="button-container" id="disabled-button">
+        <p>{buttonHeaders.disabled}</p>
+        <Button variant="default" disabled={true} />
+      </div>
+      <div className="button-container" id="disabled-button">
+        <p>{buttonHeaders.textDisabled}</p>
+        <Button variant="text" disabled={true} />
       </div>
     </div>
   );
