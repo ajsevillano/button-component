@@ -83,6 +83,12 @@ p {
   text-align: center;
 }
 
+h1 {
+  font-size: 2rem;
+  color: #3f3f3f;
+  padding-bottom: 1rem;
+}
+
 select {
   min-width: 100px;
   margin-top: 1rem;

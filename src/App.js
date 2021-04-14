@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <div className="custom-button-container">
-        <p>Custom button</p>
+        <h1>Custom button</h1>
         <Button variant={button.variant} />
         <select name="variant" onChange={HandleVariantSelect}>
           <option value="default">Default</option>
