@@ -4,7 +4,7 @@ import './App.css';
 import Button from './components/Button/Index';
 
 function App() {
-  const [button, setbutton] = useState({ variant: 'default' });
+  const [button, setbutton] = useState({ variant: 'default', boxShadow: true });
 
   const buttonHeaders = {
     default: 'Default',
@@ -27,12 +27,15 @@ function App() {
     <div className="App">
       <div className="custom-button-container">
         <h1>Custom button</h1>
-        <Button variant={button.variant} />
+        <Button variant={button.variant} boxShadow={button.boxShadow} />
         <select name="variant" onChange={HandleVariantSelect}>
           <option value="default">Default</option>
           <option value="outline">OutLine</option>
           <option value="text">Text</option>
         </select>
+        <div className="checkbox-input-container">
+          <input type="checkbox" name="boxShadow" /> <span>Box Shadow?</span>
+        </div>
       </div>
       <div className="buttons-display-container">
         <div className="button-container" id="default-button">
