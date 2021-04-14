@@ -15,7 +15,7 @@ function App() {
     textDisabled: 'Variant text(disabled)',
   };
 
-  const HandleChanges = (e) => {
+  const HandleVariantSelect = (e) => {
     const Variant = {
       ...button,
       [e.target.name]: e.target.value,
@@ -28,7 +28,7 @@ function App() {
       <div className="custom-button-container">
         <p>Custom button</p>
         <Button variant={button.variant} />
-        <select name="variant" onChange={HandleChanges}>
+        <select name="variant" onChange={HandleVariantSelect}>
           <option value="default">Default</option>
           <option value="outline">OutLine</option>
           <option value="text">Text</option>
