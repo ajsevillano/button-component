@@ -4,7 +4,11 @@ import './App.css';
 import Button from './components/Button/Index';
 
 function App() {
-  const [button, setbutton] = useState({ variant: 'default', boxShadow: true });
+  const [button, setbutton] = useState({
+    variant: 'default',
+    boxShadow: true,
+    disabled: false,
+  });
 
   const buttonHeaders = {
     default: 'Default',
@@ -31,11 +35,24 @@ function App() {
     setbutton(isShadowBoxActive);
   };
 
+  const handleDisabledCheckBox = (e) => {
+    const isButtonDisabled = {
+      ...button,
+      [e.target.name]: e.target.checked,
+    };
+    console.log(e.target.name);
+    setbutton(isButtonDisabled);
+  };
+
   return (
     <div className="App">
       <div className="custom-button-container">
         <h1>Custom button</h1>
-        <Button variant={button.variant} boxShadow={button.boxShadow} />
+        <Button
+          variant={button.variant}
+          boxShadow={button.boxShadow}
+          disabled={button.disabled}
+        />
         <select name="variant" onChange={HandleVariantSelect}>
           <option value="default">Default</option>
           <option value="outline">OutLine</option>
@@ -49,6 +66,13 @@ function App() {
             onChange={handleBoxShadowCheckBox}
           />
           <label htmlFor="boxShadow">Box Shadow?</label>
+          <input
+            type="checkbox"
+            name="disabled"
+            checked={button.disabled}
+            onChange={handleDisabledCheckBox}
+          />
+          <label htmlFor="disabled">Disabled?</label>
         </div>
       </div>
       <div className="buttons-display-container">
