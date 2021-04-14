@@ -1,9 +1,10 @@
 import './App.css';
+import Button from './Button/Index';
 
 function App() {
   return (
     <div className="App">
-      <h1>First Commit</h1>
+      <Button />
     </div>
   );
 }
