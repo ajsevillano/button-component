@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({ variant, disabled, boxShadow }) => {
+const Button = ({ variant, disabled, boxShadow, isChecked }) => {
   return (
     <div>
       <button

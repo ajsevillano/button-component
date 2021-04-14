@@ -23,6 +23,14 @@ function App() {
     setbutton(Variant);
   };
 
+  const handleBoxShadowCheckBox = (e) => {
+    const isShadowBoxActive = {
+      ...button,
+      [e.target.name]: e.target.checked,
+    };
+    setbutton(isShadowBoxActive);
+  };
+
   return (
     <div className="App">
       <div className="custom-button-container">
@@ -34,7 +42,13 @@ function App() {
           <option value="text">Text</option>
         </select>
         <div className="checkbox-input-container">
-          <input type="checkbox" name="boxShadow" /> <span>Box Shadow?</span>
+          <input
+            type="checkbox"
+            name="boxShadow"
+            checked={button.boxShadow}
+            onChange={handleBoxShadowCheckBox}
+          />
+          <label htmlFor="boxShadow">Box Shadow?</label>
         </div>
       </div>
       <div className="buttons-display-container">
