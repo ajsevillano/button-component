@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
 .btn {
-  width: 88px;
-  height: 36px;
+  min-width: 100px;
+  min-height: 40px;
   font-family: "Noto Sans JP", sans-serif;
   font-style: normal;
   font-weight: 500;
+  outline: none;
 }
 .btn:hover {
   cursor: pointer;
@@ -55,6 +56,12 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .button-container {

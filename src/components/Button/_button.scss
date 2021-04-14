@@ -1,9 +1,10 @@
 .btn {
-  width: 88px;
-  height: 36px;
+  min-width: 100px;
+  min-height: 40px;
   font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-weight: 500;
+  outline: none;
   &:hover {
     cursor: pointer;
   }
