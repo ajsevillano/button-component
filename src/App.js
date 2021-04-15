@@ -9,6 +9,7 @@ function App() {
     variant: 'default',
     boxShadow: false,
     disabled: false,
+    color: 'default',
   });
 
   const buttonHeaders = {
@@ -75,7 +76,32 @@ function App() {
           />
           <label htmlFor="disabled">Disabled?</label>
         </div>
-        <ColorPicker />
+        <div className="color-selector-container">
+          <ColorPicker
+            title="Default"
+            variant="default-color"
+            setbutton={setbutton}
+            button={button}
+          />
+          <ColorPicker
+            title="Primary"
+            variant="primary-color"
+            setbutton={setbutton}
+            button={button}
+          />
+          <ColorPicker
+            title="Secundary"
+            variant="secundary-color"
+            setbutton={setbutton}
+            button={button}
+          />
+          <ColorPicker
+            title="Danger"
+            variant="danger-color"
+            setbutton={setbutton}
+            button={button}
+          />
+        </div>
       </div>
       <div className="buttons-display-container">
         <div className="button-container" id="default-button">
