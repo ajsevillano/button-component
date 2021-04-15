@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import './App.css';
 import Button from './components/Button/Index';
+import ColorPicker from './components/Color-picker/Index';
 
 function App() {
   const [button, setbutton] = useState({
@@ -74,12 +75,7 @@ function App() {
           />
           <label htmlFor="disabled">Disabled?</label>
         </div>
-        <div className="color-selector-container">
-          <div>Default</div>
-          <div>Primary</div>
-          <div>Secundary</div>
-          <div>Danger</div>
-        </div>
+        <ColorPicker />
       </div>
       <div className="buttons-display-container">
         <div className="button-container" id="default-button">
