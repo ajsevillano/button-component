@@ -25,10 +25,6 @@
   border-radius: 6px;
   color: #3f3f3f;
 }
-.default:hover,
-.default :focus {
-  background-color: #aeaeae;
-}
 
 .outline {
   background-color: transparent;
@@ -58,20 +54,36 @@
 .Default {
   background-color: #e0e0e0;
 }
+.Default:hover,
+.Default :focus {
+  background-color: #aeaeae;
+}
 
 .Primary {
   background-color: #2962ff;
   color: white;
+}
+.Primary:hover,
+.Primary :focus {
+  background-color: #0039cb;
 }
 
 .Secundary {
   background-color: #455a64;
   color: white;
 }
+.Secundary:hover,
+.Secundary :focus {
+  background-color: #1c313a;
+}
 
 .Danger {
   background-color: #d32f2f;
   color: white;
+}
+.Danger:hover,
+.Danger :focus {
+  background-color: #9a0007;
 }
 
 .disableShadow {

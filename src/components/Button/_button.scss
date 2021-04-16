@@ -26,11 +26,6 @@
   border: none;
   border-radius: 6px;
   color: #3f3f3f;
-
-  &:hover,
-  :focus {
-    background-color: #aeaeae;
-  }
 }
 
 .outline {
@@ -61,21 +56,37 @@
 //Colors
 .Default {
   background-color: #e0e0e0;
+  &:hover,
+  :focus {
+    background-color: #aeaeae;
+  }
 }
 
 .Primary {
   background-color: #2962ff;
   color: white;
+  &:hover,
+  :focus {
+    background-color: #0039cb;
+  }
 }
 
 .Secundary {
   background-color: #455a64;
   color: white;
+  &:hover,
+  :focus {
+    background-color: #1c313a;
+  }
 }
 
 .Danger {
   background-color: #d32f2f;
   color: white;
+  &:hover,
+  :focus {
+    background-color: #9a0007;
+  }
 }
 
 .disableShadow {
