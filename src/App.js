@@ -25,6 +25,7 @@ function App() {
     const Variant = {
       ...button,
       [e.target.name]: e.target.value,
+      color: '',
     };
     setbutton(Variant);
   };
