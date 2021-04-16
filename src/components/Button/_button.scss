@@ -23,7 +23,6 @@
 
 //Variants
 .default {
-  background: #e0e0e0;
   border: none;
   border-radius: 6px;
   color: #3f3f3f;
@@ -57,6 +56,27 @@
   &:disabled {
     background-color: transparent;
   }
+}
+
+//Colors
+
+.Default-color {
+  background-color: #e0e0e0;
+}
+
+.Primary-color {
+  background-color: #2962ff;
+  color: white;
+}
+
+.Secundary-color {
+  background-color: #455a64;
+  color: white;
+}
+
+.Danger-color {
+  background-color: #d32f2f;
+  color: white;
 }
 
 .disableShadow {
