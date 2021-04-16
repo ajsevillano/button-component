@@ -6,6 +6,15 @@
   font-style: normal;
   font-weight: 500;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn span {
+  margin: 0 0.4rem;
+}
+.btn p {
+  padding-bottom: 0px;
 }
 .btn:hover {
   cursor: pointer;

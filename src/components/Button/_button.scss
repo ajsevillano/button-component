@@ -5,6 +5,18 @@
   font-style: normal;
   font-weight: 500;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    margin: 0 0.4rem;
+  }
+
+  p {
+    padding-bottom: 0px;
+  }
+
   &:hover {
     cursor: pointer;
   }
