@@ -43,6 +43,9 @@
 .outline :focus {
   background: rgba(41, 98, 255, 0.1);
 }
+.outline:disabled {
+  border: none;
+}
 
 .text {
   color: #3d5afe;

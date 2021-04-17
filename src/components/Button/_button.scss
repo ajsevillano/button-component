@@ -47,6 +47,9 @@
   :focus {
     background: rgba(41, 98, 255, 0.1);
   }
+  &:disabled {
+    border: none;
+  }
 }
 
 .text {
