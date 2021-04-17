@@ -134,6 +134,10 @@
   color: white;
 }
 
+.icon-picker-container {
+  display: flex;
+}
+
 * {
   margin: 0;
   padding: 0;

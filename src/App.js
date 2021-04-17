@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import Button from './components/Button/Index';
 import ColorPicker from './components/Color-picker/Index';
+import IconPicker from './components/Icon-picker/Index';
 
 function App() {
   const [button, setbutton] = useState({
@@ -82,7 +83,13 @@ function App() {
           />
           <label htmlFor="disabled">Disabled?</label>
         </div>
-        <div className="left-icon-picker-container"></div>
+        <div className="icon-picker-container">
+          <IconPicker />
+          <IconPicker />
+          <IconPicker />
+          <IconPicker />
+          <IconPicker />
+        </div>
 
         {button.variant === 'default' && (
           <div className="color-selector-container">
