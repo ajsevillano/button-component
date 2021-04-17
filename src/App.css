@@ -136,6 +136,14 @@
 
 .icon-picker-container {
   display: flex;
+  padding: 0 1rem 1rem 1rem;
+}
+.icon-picker-container span {
+  border: 1px solid #bdbdbd;
+  padding: 0.3rem;
+  background-color: #f3f3f3;
+  margin: 0.5rem;
+  border-radius: 15%;
 }
 
 * {
@@ -185,6 +193,7 @@ label {
 
 .checkbox-input-container {
   padding: 1rem;
+  margin-left: 2rem;
 }
 
 .buttons-display-container {

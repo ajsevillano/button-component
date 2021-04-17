@@ -1,3 +1,12 @@
 .icon-picker-container {
   display: flex;
+  padding: 0 1rem 1rem 1rem;
+
+  span {
+    border: 1px solid rgb(189, 189, 189);
+    padding: 0.3rem;
+    background-color: #f3f3f3;
+    margin: 0.5rem;
+    border-radius: 15%;
+  }
 }
