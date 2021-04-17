@@ -42,6 +42,9 @@ select {
   padding: 5px 0 5px 5px;
   text-align: center;
   margin: 0 1rem;
+  &:last-child {
+    margin: 0 0 0 1rem;
+  }
 }
 
 label {
@@ -81,4 +84,7 @@ label {
 .select-input-container {
   display: flex;
   padding-top: 1rem;
+  align-items: center;
+
+  justify-content: center;
 }

@@ -160,6 +160,7 @@
   padding: 0.3rem;
   background-color: #f3f3f3;
   margin: 0.5rem;
+  color: #3f3f3f;
   border-radius: 15%;
   cursor: pointer;
 }
@@ -209,6 +210,9 @@ select {
   text-align: center;
   margin: 0 1rem;
 }
+select:last-child {
+  margin: 0 0 0 1rem;
+}
 
 label {
   padding: 0 1.5rem 0 0.3rem;
@@ -247,6 +251,8 @@ label {
 .select-input-container {
   display: flex;
   padding-top: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=App.css.map */

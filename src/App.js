@@ -73,11 +73,13 @@ function App() {
           size={button.size}
         />
         <div className="select-input-container">
+          <p>Style</p>
           <select name="variant" onChange={HandleVariantSelect}>
             <option value="default">Default</option>
             <option value="outline">OutLine</option>
             <option value="text">Text</option>
           </select>
+          <p>Size</p>
           <select name="size" onChange={HandleSizeSelect}>
             <option value="sm">Small</option>
             <option value="md">Medium</option>
@@ -131,6 +133,12 @@ function App() {
           <IconPicker
             side="leftIcon"
             icon="star"
+            button={button}
+            setbutton={setbutton}
+          />
+          <IconPicker
+            side="leftIcon"
+            icon="block"
             button={button}
             setbutton={setbutton}
           />
