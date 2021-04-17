@@ -1,6 +1,8 @@
 .icon-picker-container {
   display: flex;
   padding: 0 1rem 1rem 1rem;
+  justify-content: center;
+  align-items: center;
 
   span {
     border: 1px solid rgb(189, 189, 189);
@@ -8,5 +10,13 @@
     background-color: #f3f3f3;
     margin: 0.5rem;
     border-radius: 15%;
+    cursor: pointer;
+    &:hover {
+      background-color: #d1d1d1;
+    }
+  }
+
+  p {
+    width: 5.8rem;
   }
 }

@@ -11,8 +11,8 @@ function App() {
     boxShadow: false,
     disabled: false,
     color: 'Default',
-    leftIcon: 'face',
-    rightIcon: 'reply_all',
+    leftIcon: false,
+    rightIcon: false,
   });
 
   const buttonHeaders = {
@@ -67,6 +67,7 @@ function App() {
           <option value="outline">OutLine</option>
           <option value="text">Text</option>
         </select>
+
         <div className="checkbox-input-container">
           <input
             type="checkbox"
@@ -84,11 +85,72 @@ function App() {
           <label htmlFor="disabled">Disabled?</label>
         </div>
         <div className="icon-picker-container">
-          <IconPicker />
-          <IconPicker />
-          <IconPicker />
-          <IconPicker />
-          <IconPicker />
+          <p className="left-icon">Left icon</p>
+
+          <IconPicker
+            side="leftIcon"
+            icon="home"
+            button={button}
+            setbutton={setbutton}
+          />
+          <IconPicker
+            side="leftIcon"
+            icon="favorite"
+            button={button}
+            setbutton={setbutton}
+          />
+          <IconPicker
+            side="leftIcon"
+            icon="thumb_up"
+            button={button}
+            setbutton={setbutton}
+          />
+          <IconPicker
+            side="leftIcon"
+            icon="store"
+            button={button}
+            setbutton={setbutton}
+          />
+          <IconPicker
+            side="leftIcon"
+            icon="star"
+            button={button}
+            setbutton={setbutton}
+          />
+        </div>
+        <div className="icon-picker-container">
+          <p>Right icon</p>
+
+          <IconPicker
+            side="rightIcon"
+            icon="light_mode"
+            button={button}
+            setbutton={setbutton}
+          />
+          <IconPicker
+            side="rightIcon"
+            icon="dark_mode"
+            button={button}
+            setbutton={setbutton}
+          />
+          <IconPicker
+            side="rightIcon"
+            icon="phone_missed"
+            button={button}
+            setbutton={setbutton}
+          />
+          <IconPicker
+            side="rightIcon"
+            icon="spa"
+            button={button}
+            setbutton={setbutton}
+          />
+          <IconPicker
+            side="rightIcon"
+            icon="party_mode"
+            button={button}
+            setbutton={setbutton}
+          />
         </div>
 
         {button.variant === 'default' && (
