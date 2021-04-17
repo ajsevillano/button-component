@@ -13,7 +13,7 @@ function App() {
     color: 'Default',
     leftIcon: false,
     rightIcon: false,
-    size: 'md',
+    size: 'sm',
   });
 
   const buttonHeaders = {
@@ -70,6 +70,7 @@ function App() {
           color={button.color}
           leftIcon={button.leftIcon}
           rightIcon={button.rightIcon}
+          size={button.size}
         />
         <div className="select-input-container">
           <select name="variant" onChange={HandleVariantSelect}>
@@ -77,7 +78,7 @@ function App() {
             <option value="outline">OutLine</option>
             <option value="text">Text</option>
           </select>
-          <select defaultValue="md" name="size" onChange={HandleSizeSelect}>
+          <select name="size" onChange={HandleSizeSelect}>
             <option value="sm">Small</option>
             <option value="md">Medium</option>
             <option value="lg">Large</option>

@@ -5,12 +5,15 @@ const Button = ({
   disabled,
   boxShadow,
   color,
+  size,
   leftIcon,
   rightIcon,
 }) => {
   return (
     <button
-      className={`btn ${color} ${boxShadow ? 'box-shadow' : ''} ${variant}`}
+      className={`btn ${size} ${color} ${
+        boxShadow ? 'box-shadow' : ''
+      } ${variant}`}
       disabled={disabled}
     >
       {leftIcon && <span className="material-icons">{leftIcon}</span>}

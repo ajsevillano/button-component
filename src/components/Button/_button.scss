@@ -1,6 +1,4 @@
 .btn {
-  min-width: 130px;
-  min-height: 40px;
   font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -63,6 +61,24 @@
   &:disabled {
     background-color: transparent;
   }
+}
+
+//Sizes
+.sm {
+  min-width: 130px;
+  min-height: 40px;
+}
+
+.md {
+  min-width: 150px;
+  min-height: 50px;
+  font-size: 1rem;
+}
+
+.lg {
+  min-width: 200px;
+  min-height: 60px;
+  font-size: 1.4rem;
 }
 
 //Colors
