@@ -10,6 +10,8 @@ function App() {
     boxShadow: false,
     disabled: false,
     color: 'Default',
+    leftIcon: 'face',
+    rightIcon: 'reply_all',
   });
 
   const buttonHeaders = {
@@ -56,6 +58,8 @@ function App() {
           boxShadow={button.boxShadow}
           disabled={button.disabled}
           color={button.color}
+          leftIcon={button.leftIcon}
+          rightIcon={button.rightIcon}
         />
         <select name="variant" onChange={HandleVariantSelect}>
           <option value="default">Default</option>

@@ -1,14 +1,21 @@
 import React from 'react';
 
-const Button = ({ variant, disabled, boxShadow, color }) => {
+const Button = ({
+  variant,
+  disabled,
+  boxShadow,
+  color,
+  leftIcon,
+  rightIcon,
+}) => {
   return (
     <button
       className={`btn ${color} ${boxShadow ? 'box-shadow' : ''} ${variant}`}
       disabled={disabled}
     >
-      <span class="material-icons">face</span>
+      {leftIcon && <span className="material-icons">{leftIcon}</span>}
       <p>Default</p>
-      <span class="material-icons">face</span>
+      {rightIcon && <span className="material-icons">{rightIcon}</span>}
     </button>
   );
 };
