@@ -13,6 +13,7 @@ function App() {
     color: 'Default',
     leftIcon: false,
     rightIcon: false,
+    size: 'md',
   });
 
   const buttonHeaders = {
@@ -31,6 +32,14 @@ function App() {
       color: '',
     };
     setbutton(Variant);
+  };
+
+  const HandleSizeSelect = (e) => {
+    const Size = {
+      ...button,
+      [e.target.name]: e.target.value,
+    };
+    setbutton(Size);
   };
 
   const handleBoxShadowCheckBox = (e) => {
@@ -62,11 +71,18 @@ function App() {
           leftIcon={button.leftIcon}
           rightIcon={button.rightIcon}
         />
-        <select name="variant" onChange={HandleVariantSelect}>
-          <option value="default">Default</option>
-          <option value="outline">OutLine</option>
-          <option value="text">Text</option>
-        </select>
+        <div className="select-input-container">
+          <select name="variant" onChange={HandleVariantSelect}>
+            <option value="default">Default</option>
+            <option value="outline">OutLine</option>
+            <option value="text">Text</option>
+          </select>
+          <select defaultValue="md" name="size" onChange={HandleSizeSelect}>
+            <option value="sm">Small</option>
+            <option value="md">Medium</option>
+            <option value="lg">Large</option>
+          </select>
+        </div>
 
         <div className="checkbox-input-container">
           <input
