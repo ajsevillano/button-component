@@ -82,6 +82,8 @@ function App() {
           />
           <label htmlFor="disabled">Disabled?</label>
         </div>
+        <div className="left-icon-picker-container"></div>
+
         {button.variant === 'default' && (
           <div className="color-selector-container">
             <ColorPicker
