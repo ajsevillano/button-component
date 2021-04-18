@@ -9,6 +9,13 @@ import Input from './components/Input/Index';
 import ColorPickerBox from './components/Color-picker-box/Index';
 import ButtonsShowcase from './components/Buttons-showcase/Index';
 
+import {
+  HandleVariantSelect,
+  HandleSizeSelect,
+  handleBoxShadowCheckBox,
+  handleDisabledCheckBox,
+} from './App.utils';
+
 function App() {
   const [button, setbutton] = useState({
     variant: 'default',
@@ -20,37 +27,20 @@ function App() {
     size: 'sm',
   });
 
-  const HandleVariantSelect = (e) => {
-    const Variant = {
-      ...button,
-      [e.target.name]: e.target.value,
-      color: '',
-    };
-    setbutton(Variant);
+  const VariantSelect = (e) => {
+    HandleVariantSelect(e, button, setbutton);
   };
 
-  const HandleSizeSelect = (e) => {
-    const Size = {
-      ...button,
-      [e.target.name]: e.target.value,
-    };
-    setbutton(Size);
+  const SizeSelect = (e) => {
+    HandleSizeSelect(e, button, setbutton);
   };
 
-  const handleBoxShadowCheckBox = (e) => {
-    const isShadowBoxActive = {
-      ...button,
-      [e.target.name]: e.target.checked,
-    };
-    setbutton(isShadowBoxActive);
+  const boxShadowCheckBox = (e) => {
+    handleBoxShadowCheckBox(e, button, setbutton);
   };
 
-  const handleDisabledCheckBox = (e) => {
-    const isButtonDisabled = {
-      ...button,
-      [e.target.name]: e.target.checked,
-    };
-    setbutton(isButtonDisabled);
+  const disabledCheckBox = (e) => {
+    handleDisabledCheckBox(e, button, setbutton);
   };
 
   return (
@@ -70,13 +60,13 @@ function App() {
           <p>Style</p>
           <Select
             name="variant"
-            onChange={HandleVariantSelect}
+            onChange={VariantSelect}
             selectOptions={selectStyle}
           />
           <p>Size</p>
           <Select
             name="size"
-            onChange={HandleSizeSelect}
+            onChange={SizeSelect}
             selectOptions={selectSize}
           />
         </div>
@@ -85,13 +75,13 @@ function App() {
             label="Box shadow?"
             name="boxShadow"
             checked={button.boxShadow}
-            handleInput={handleBoxShadowCheckBox}
+            handleInput={boxShadowCheckBox}
           />
           <Input
             name="disabled"
             label="Disabled?"
             checked={button.disabled}
-            handleInput={handleDisabledCheckBox}
+            handleInput={disabledCheckBox}
           />
         </div>
         <IconPickerGroup
