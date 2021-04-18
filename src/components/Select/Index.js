@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Select = ({ name, onChange, selectOptions }) => {
   return (
     <select name={name} onChange={onChange}>

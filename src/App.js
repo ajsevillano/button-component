@@ -3,7 +3,8 @@ import { useState } from 'react';
 import './App.css';
 import Button from './components/Button/Index';
 import ColorPicker from './components/Color-picker/Index';
-import IconPicker from './components/Icon-picker/Index';
+import IconPickerGroup from './components/Icon-picker-group/Index';
+import IconPicker from './components/Icon-picker-group/Icon-picker/Index';
 import Select from './components/Select/Index';
 
 function App() {
@@ -127,47 +128,16 @@ function App() {
           />
           <label htmlFor="disabled">Disabled?</label>
         </div>
-        <div className="icon-picker-container">
-          <p className="left-icon">Left icon</p>
-
-          <IconPicker
-            side="leftIcon"
-            icon="home"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="leftIcon"
-            icon="favorite"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="leftIcon"
-            icon="thumb_up"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="leftIcon"
-            icon="store"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="leftIcon"
-            icon="star"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="leftIcon"
-            icon="block"
-            button={button}
-            setbutton={setbutton}
-            reset={1}
-          />
-        </div>
+        <IconPickerGroup
+          button={button}
+          setbutton={setbutton}
+          side="leftIcon"
+          icon1="home"
+          icon2="favorite"
+          icon3="thumb_up"
+          icon4="store"
+          icon5="star"
+        />
         <div className="icon-picker-container">
           <p>Right icon</p>
 
