@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import './App.css';
+import { buttonHeaders, selectStyle, selectSize } from './Data';
 import Button from './components/Button/Index';
 import ColorPicker from './components/Color-picker/Index';
 import IconPickerGroup from './components/Icon-picker-group/Index';
@@ -16,39 +17,6 @@ function App() {
     rightIcon: false,
     size: 'sm',
   });
-
-  const buttonHeaders = {
-    default: 'Default',
-    outline: 'Variant outline',
-    text: 'Variant text',
-    disableshadow: 'Disable shadow',
-    disabled: 'Default(disabled)',
-    textDisabled: 'Variant text(disabled)',
-  };
-
-  const selectStyle = [
-    {
-      label: 'Default',
-      value: 'default',
-    },
-    {
-      label: 'Outline',
-      value: 'outline',
-    },
-    {
-      label: 'Text',
-      value: 'text',
-    },
-  ];
-
-  const selectSize = [
-    {
-      label: 'Small',
-      value: 'sm',
-    },
-    { label: 'Medium', value: 'md' },
-    { label: 'Large', value: 'lg' },
-  ];
 
   const HandleVariantSelect = (e) => {
     const Variant = {
