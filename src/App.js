@@ -4,6 +4,7 @@ import './App.css';
 import Button from './components/Button/Index';
 import ColorPicker from './components/Color-picker/Index';
 import IconPicker from './components/Icon-picker/Index';
+import Select from './components/Select/Index';
 
 function App() {
   const [button, setbutton] = useState({
@@ -24,6 +25,30 @@ function App() {
     disabled: 'Default(disabled)',
     textDisabled: 'Variant text(disabled)',
   };
+
+  const selectStyle = [
+    {
+      label: 'Default',
+      value: 'default',
+    },
+    {
+      label: 'Outline',
+      value: 'outline',
+    },
+    {
+      label: 'Text',
+      value: 'text',
+    },
+  ];
+
+  const selectSize = [
+    {
+      label: 'Small',
+      value: 'sm',
+    },
+    { label: 'Medium', value: 'md' },
+    { label: 'Large', value: 'lg' },
+  ];
 
   const HandleVariantSelect = (e) => {
     const Variant = {
@@ -74,17 +99,16 @@ function App() {
         />
         <div className="select-input-container">
           <p>Style</p>
-          <select name="variant" onChange={HandleVariantSelect}>
-            <option value="default">Default</option>
-            <option value="outline">OutLine</option>
-            <option value="text">Text</option>
-          </select>
-          <p>Size</p>
-          <select name="size" onChange={HandleSizeSelect}>
-            <option value="sm">Small</option>
-            <option value="md">Medium</option>
-            <option value="lg">Large</option>
-          </select>
+          <Select
+            name="variant"
+            onChange={HandleVariantSelect}
+            selectOptions={selectStyle}
+          />
+          <Select
+            name="size"
+            onChange={HandleSizeSelect}
+            selectOptions={selectSize}
+          />
         </div>
 
         <div className="checkbox-input-container">
