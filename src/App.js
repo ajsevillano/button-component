@@ -1,12 +1,13 @@
 import { useState } from 'react';
 
 import './App.css';
-import { buttonHeaders, selectStyle, selectSize } from './Data';
+import { selectStyle, selectSize } from './Data';
 import Button from './components/Button/Index';
-import ColorPicker from './components/Color-picker/Index';
 import IconPickerGroup from './components/Icon-picker-group/Index';
 import Select from './components/Select/Index';
 import Input from './components/Input/Index';
+import ColorPickerBox from './components/Color-picker-box/Index';
+import ButtonsShowcase from './components/Buttons-showcase/Index';
 
 function App() {
   const [button, setbutton] = useState({
@@ -72,13 +73,13 @@ function App() {
             onChange={HandleVariantSelect}
             selectOptions={selectStyle}
           />
+          <p>Size</p>
           <Select
             name="size"
             onChange={HandleSizeSelect}
             selectOptions={selectSize}
           />
         </div>
-
         <div className="checkbox-input-container">
           <Input
             label="Box shadow?"
@@ -117,60 +118,10 @@ function App() {
         />
 
         {button.variant === 'default' && (
-          <div className="color-selector-container">
-            <ColorPicker
-              title="Default"
-              variant="default-color"
-              setbutton={setbutton}
-              button={button}
-            />
-            <ColorPicker
-              title="Primary"
-              variant="primary-color"
-              setbutton={setbutton}
-              button={button}
-            />
-            <ColorPicker
-              title="Secundary"
-              variant="secundary-color"
-              setbutton={setbutton}
-              button={button}
-            />
-            <ColorPicker
-              title="Danger"
-              variant="danger-color"
-              setbutton={setbutton}
-              button={button}
-            />
-          </div>
+          <ColorPickerBox button={button} setbutton={setbutton} />
         )}
       </div>
-      <div className="buttons-display-container">
-        <div className="button-container" id="default-button">
-          <p>{buttonHeaders.default}</p>
-          <Button variant="default" />
-        </div>
-        <div className="button-container" id="outline-button">
-          <p>{buttonHeaders.outline}</p>
-          <Button variant="outline" />
-        </div>
-        <div className="button-container" id="text-button">
-          <p>{buttonHeaders.text}</p>
-          <Button variant="text" />
-        </div>
-        <div className="button-container" id="disableShadow-button">
-          <p>{buttonHeaders.disableshadow}</p>
-          <Button variant="disableShadow" />
-        </div>
-        <div className="button-container" id="disabled-button">
-          <p>{buttonHeaders.disabled}</p>
-          <Button variant="default" disabled={true} />
-        </div>
-        <div className="button-container" id="disabled-button">
-          <p>{buttonHeaders.textDisabled}</p>
-          <Button variant="text" disabled={true} />
-        </div>
-      </div>
+      <ButtonsShowcase />
     </div>
   );
 }
