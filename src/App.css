@@ -183,6 +183,15 @@
   border: 1px solid #27ae60;
 }
 
+.buttons-display-container {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  min-height: 50vh;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 select {
   min-width: 100px;
   border: solid 1px #dbdbdb;
@@ -233,15 +242,6 @@ h1 {
 .checkbox-input-container {
   padding: 1rem;
   margin-left: 2rem;
-}
-
-.buttons-display-container {
-  background-color: #f3f3f3;
-  display: flex;
-  justify-content: center;
-  min-height: 50vh;
-  flex-wrap: wrap;
-  align-content: center;
 }
 
 .custom-button-container {

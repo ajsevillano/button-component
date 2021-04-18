@@ -1,6 +1,7 @@
 @use './components/Button/button';
 @use './components/Color-picker-box/Color-picker/color-picker';
 @use './components/Icon-picker-group/Icon-picker/icon-picker';
+@use './components/Buttons-showcase/Buttons-showcase';
 @use './components/Select/Select';
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
@@ -36,15 +37,6 @@ h1 {
 .checkbox-input-container {
   padding: 1rem;
   margin-left: 2rem;
-}
-
-.buttons-display-container {
-  background-color: rgb(243, 243, 243);
-  display: flex;
-  justify-content: center;
-  min-height: 50vh;
-  flex-wrap: wrap;
-  align-content: center;
 }
 
 .custom-button-container {
