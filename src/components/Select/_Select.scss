@@ -1,0 +1,18 @@
+select {
+  min-width: 100px;
+  border: solid 1px #dbdbdb;
+  outline: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  padding: 5px 0 5px 5px;
+  text-align: center;
+  margin: 0 1rem;
+  &:last-child {
+    margin: 0 0 0 1rem;
+  }
+}
+
+label {
+  padding: 0 1.5rem 0 0.3rem;
+}
