@@ -1,18 +1,10 @@
-export const HandleVariantSelect = (e, button, setbutton) => {
-  const Variant = {
+export const handleSelects = (e, button, setbutton) => {
+  const changeSelect = {
     ...button,
     [e.target.name]: e.target.value,
     color: '',
   };
-  setbutton(Variant);
-};
-
-export const HandleSizeSelect = (e, button, setbutton) => {
-  const Size = {
-    ...button,
-    [e.target.name]: e.target.value,
-  };
-  setbutton(Size);
+  setbutton(changeSelect);
 };
 
 export const handleCheckBoxes = (e, button, setbutton) => {

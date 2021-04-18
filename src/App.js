@@ -1,7 +1,7 @@
 import { useState } from 'react';
-
 import './App.css';
-import { selectStyle, selectSize } from './Data';
+
+//Components
 import Button from './components/Button/Index';
 import IconPickerGroup from './components/Icon-picker-group/Index';
 import Select from './components/Select/Index';
@@ -9,11 +9,9 @@ import Input from './components/Input/Index';
 import ColorPickerBox from './components/Color-picker-box/Index';
 import ButtonsShowcase from './components/Buttons-showcase/Index';
 
-import {
-  HandleVariantSelect,
-  HandleSizeSelect,
-  handleCheckBoxes,
-} from './App.utils';
+//Utilities
+import { selectStyle, selectSize } from './Data';
+import { handleSelects, handleCheckBoxes } from './App.utils';
 
 function App() {
   const [button, setbutton] = useState({
@@ -26,12 +24,8 @@ function App() {
     size: 'sm',
   });
 
-  const VariantSelect = (e) => {
-    HandleVariantSelect(e, button, setbutton);
-  };
-
-  const SizeSelect = (e) => {
-    HandleSizeSelect(e, button, setbutton);
+  const selectHandler = (e) => {
+    handleSelects(e, button, setbutton);
   };
 
   const checkBoxHandler = (e) => {
@@ -55,13 +49,13 @@ function App() {
           <p>Style</p>
           <Select
             name="variant"
-            onChange={VariantSelect}
+            onChange={selectHandler}
             selectOptions={selectStyle}
           />
           <p>Size</p>
           <Select
             name="size"
-            onChange={SizeSelect}
+            onChange={selectHandler}
             selectOptions={selectSize}
           />
         </div>
