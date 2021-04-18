@@ -94,7 +94,7 @@ function App() {
             checked={button.boxShadow}
             onChange={handleBoxShadowCheckBox}
           />
-          <label htmlFor="boxShadow">Box Shadow?</label>
+          <label htmlFor="boxShadow">Box shadow?</label>
           <input
             type="checkbox"
             name="disabled"
@@ -141,6 +141,7 @@ function App() {
             icon="block"
             button={button}
             setbutton={setbutton}
+            reset={1}
           />
         </div>
         <div className="icon-picker-container">
@@ -175,6 +176,13 @@ function App() {
             icon="party_mode"
             button={button}
             setbutton={setbutton}
+          />
+          <IconPicker
+            side="rightIcon"
+            icon="block"
+            button={button}
+            setbutton={setbutton}
+            reset={1}
           />
         </div>
 

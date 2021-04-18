@@ -173,6 +173,15 @@
 .icon-picker-container p {
   width: 5.8rem;
 }
+.icon-picker-container .reset-button {
+  color: #d32f2f;
+}
+.icon-picker-container .active {
+  color: #1a8647;
+  background-color: #e9fff2;
+  pointer-events: none;
+  border: 1px solid #27ae60;
+}
 
 * {
   margin: 0;
