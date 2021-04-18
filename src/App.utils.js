@@ -15,18 +15,10 @@ export const HandleSizeSelect = (e, button, setbutton) => {
   setbutton(Size);
 };
 
-export const handleBoxShadowCheckBox = (e, button, setbutton) => {
-  const isShadowBoxActive = {
+export const handleCheckBoxes = (e, button, setbutton) => {
+  const changeCheckBoxes = {
     ...button,
     [e.target.name]: e.target.checked,
   };
-  setbutton(isShadowBoxActive);
-};
-
-export const handleDisabledCheckBox = (e, button, setbutton) => {
-  const isButtonDisabled = {
-    ...button,
-    [e.target.name]: e.target.checked,
-  };
-  setbutton(isButtonDisabled);
+  setbutton(changeCheckBoxes);
 };

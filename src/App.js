@@ -12,8 +12,7 @@ import ButtonsShowcase from './components/Buttons-showcase/Index';
 import {
   HandleVariantSelect,
   HandleSizeSelect,
-  handleBoxShadowCheckBox,
-  handleDisabledCheckBox,
+  handleCheckBoxes,
 } from './App.utils';
 
 function App() {
@@ -35,12 +34,8 @@ function App() {
     HandleSizeSelect(e, button, setbutton);
   };
 
-  const boxShadowCheckBox = (e) => {
-    handleBoxShadowCheckBox(e, button, setbutton);
-  };
-
-  const disabledCheckBox = (e) => {
-    handleDisabledCheckBox(e, button, setbutton);
+  const checkBoxHandler = (e) => {
+    handleCheckBoxes(e, button, setbutton);
   };
 
   return (
@@ -75,13 +70,13 @@ function App() {
             label="Box shadow?"
             name="boxShadow"
             checked={button.boxShadow}
-            handleInput={boxShadowCheckBox}
+            handleInput={checkBoxHandler}
           />
           <Input
             name="disabled"
             label="Disabled?"
             checked={button.disabled}
-            handleInput={disabledCheckBox}
+            handleInput={checkBoxHandler}
           />
         </div>
         <IconPickerGroup
