@@ -6,6 +6,7 @@ import Button from './components/Button/Index';
 import ColorPicker from './components/Color-picker/Index';
 import IconPickerGroup from './components/Icon-picker-group/Index';
 import Select from './components/Select/Index';
+import Input from './components/Input/Index';
 
 function App() {
   const [button, setbutton] = useState({
@@ -79,20 +80,18 @@ function App() {
         </div>
 
         <div className="checkbox-input-container">
-          <input
-            type="checkbox"
+          <Input
+            label="Box shadow?"
             name="boxShadow"
             checked={button.boxShadow}
-            onChange={handleBoxShadowCheckBox}
+            handleInput={handleBoxShadowCheckBox}
           />
-          <label htmlFor="boxShadow">Box shadow?</label>
-          <input
-            type="checkbox"
+          <Input
             name="disabled"
+            label="Disabled?"
             checked={button.disabled}
-            onChange={handleDisabledCheckBox}
+            handleInput={handleDisabledCheckBox}
           />
-          <label htmlFor="disabled">Disabled?</label>
         </div>
         <IconPickerGroup
           header="Left icon"
