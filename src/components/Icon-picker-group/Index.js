@@ -1,6 +1,7 @@
 import IconPicker from '../Icon-picker-group/Icon-picker/Index';
 
 const IconPickerGroup = ({
+  header,
   button,
   setbutton,
   side,
@@ -12,7 +13,7 @@ const IconPickerGroup = ({
 }) => {
   return (
     <div className="icon-picker-container">
-      <p className="left-icon">Left icon</p>
+      <p className="left-icon">{header}</p>
 
       <IconPicker
         side={side}

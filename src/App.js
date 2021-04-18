@@ -4,7 +4,6 @@ import './App.css';
 import Button from './components/Button/Index';
 import ColorPicker from './components/Color-picker/Index';
 import IconPickerGroup from './components/Icon-picker-group/Index';
-import IconPicker from './components/Icon-picker-group/Icon-picker/Index';
 import Select from './components/Select/Index';
 
 function App() {
@@ -81,7 +80,6 @@ function App() {
       ...button,
       [e.target.name]: e.target.checked,
     };
-    console.log(e.target.name);
     setbutton(isButtonDisabled);
   };
 
@@ -129,6 +127,7 @@ function App() {
           <label htmlFor="disabled">Disabled?</label>
         </div>
         <IconPickerGroup
+          header="Left icon"
           button={button}
           setbutton={setbutton}
           side="leftIcon"
@@ -138,47 +137,17 @@ function App() {
           icon4="store"
           icon5="star"
         />
-        <div className="icon-picker-container">
-          <p>Right icon</p>
-
-          <IconPicker
-            side="rightIcon"
-            icon="light_mode"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="rightIcon"
-            icon="dark_mode"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="rightIcon"
-            icon="phone_missed"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="rightIcon"
-            icon="spa"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="rightIcon"
-            icon="party_mode"
-            button={button}
-            setbutton={setbutton}
-          />
-          <IconPicker
-            side="rightIcon"
-            icon="block"
-            button={button}
-            setbutton={setbutton}
-            reset={1}
-          />
-        </div>
+        <IconPickerGroup
+          header="Right icon"
+          button={button}
+          setbutton={setbutton}
+          side="rightIcon"
+          icon1="light_mode"
+          icon2="dark_mode"
+          icon3="phone_missed"
+          icon4="spa"
+          icon5="party_mode"
+        />
 
         {button.variant === 'default' && (
           <div className="color-selector-container">
