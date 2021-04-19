@@ -1,18 +1,10 @@
 import React from 'react';
 
-const ColorPicker = ({ title, variant, setbutton, button }) => {
-  const handleColorPicker = (e) => {
-    const changeButtonColor = {
-      ...button,
-      [e.target.name]: e.target.id,
-    };
-    setbutton(changeButtonColor);
-  };
-
+const ColorPicker = ({ title, variant, handleColorPicker }) => {
   return (
     <button
       name="color"
-      id={title}
+      value={title}
       onClick={handleColorPicker}
       className={`color-selector ${variant}`}
     >

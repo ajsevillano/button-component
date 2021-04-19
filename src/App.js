@@ -11,14 +11,18 @@ import ButtonsShowcase from './components/Buttons-showcase/Index';
 
 //Utilities
 import { selectStyle, selectSize } from './Data';
-import { handleSelects, handleCheckBoxes } from './App.utils';
+import {
+  handleSelects,
+  handleCheckBoxes,
+  handleColorPicker,
+} from './App.utils';
 
 function App() {
   const [button, setbutton] = useState({
     variant: 'default',
     boxShadow: false,
     disabled: false,
-    color: '',
+    color: 'Default',
     leftIcon: false,
     rightIcon: false,
     size: 'sm',
@@ -26,6 +30,10 @@ function App() {
 
   const selectHandler = (e) => {
     handleSelects(e, button, setbutton);
+  };
+
+  const colorPickerHandler = (e) => {
+    handleColorPicker(e, button, setbutton);
   };
 
   const checkBoxHandler = (e) => {
@@ -97,7 +105,11 @@ function App() {
         />
 
         {button.variant === 'default' && (
-          <ColorPickerBox button={button} setbutton={setbutton} />
+          <ColorPickerBox
+            button={button}
+            setbutton={setbutton}
+            handleColorPicker={colorPickerHandler}
+          />
         )}
       </div>
       <ButtonsShowcase />

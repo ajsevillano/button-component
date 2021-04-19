@@ -14,3 +14,11 @@ export const handleCheckBoxes = (e, button, setbutton) => {
   };
   setbutton(changeCheckBoxes);
 };
+
+export const handleColorPicker = (e, button, setbutton) => {
+  const changeButtonColor = {
+    ...button,
+    [e.target.name]: e.target.value,
+  };
+  setbutton(changeButtonColor);
+};
