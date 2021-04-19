@@ -4,18 +4,20 @@ const ColorPicker = ({ title, variant, setbutton, button }) => {
   const handleColorPicker = (e) => {
     const changeButtonColor = {
       ...button,
-      color: e.target.id,
+      [e.target.name]: e.target.id,
     };
     setbutton(changeButtonColor);
   };
+
   return (
-    <div
+    <button
+      name="color"
       id={title}
       onClick={handleColorPicker}
       className={`color-selector ${variant}`}
     >
       {title}
-    </div>
+    </button>
   );
 };
 

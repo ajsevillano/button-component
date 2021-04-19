@@ -18,7 +18,7 @@ function App() {
     variant: 'default',
     boxShadow: false,
     disabled: false,
-    color: 'Default',
+    color: '',
     leftIcon: false,
     rightIcon: false,
     size: 'sm',
