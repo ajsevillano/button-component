@@ -50,7 +50,6 @@ const IconPickerGroup = ({
         icon="block"
         button={button}
         setbutton={setbutton}
-        reset={1}
       />
     </div>
   );

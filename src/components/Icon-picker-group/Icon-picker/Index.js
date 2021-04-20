@@ -1,21 +1,23 @@
-const IconPicker = ({ icon, button, setbutton, side, reset }) => {
+const IconPicker = ({ icon, button, setbutton, side }) => {
+  const resetButton = 'block';
   const handleIconPicker = () => {
-    const changeButtonIcon = !reset
-      ? {
-          ...button,
-          [side]: icon,
-        }
-      : {
-          ...button,
-          [side]: false,
-        };
+    const changeButtonIcon =
+      icon !== resetButton
+        ? {
+            ...button,
+            [side]: icon,
+          }
+        : {
+            ...button,
+            [side]: false,
+          };
     setbutton(changeButtonIcon);
   };
 
   const handleActiveIcon =
     icon === button.leftIcon || icon === button.rightIcon ? 'active' : '';
 
-  const handleResetButton = reset ? 'reset-button' : '';
+  const handleResetButton = icon === resetButton ? 'reset-button' : '';
 
   return (
     <span
