@@ -1,5 +1,6 @@
 .color-selector-container {
   display: flex;
+  padding: 1rem 0 1rem 0;
 }
 
 .color-selector {
@@ -33,4 +34,11 @@
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   color: white;
+}
+
+//Mobile styles
+@media screen and (max-width: 768px) {
+  .color-selector-container {
+    margin-bottom: 2rem;
+  }
 }

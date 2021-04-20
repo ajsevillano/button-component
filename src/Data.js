@@ -5,15 +5,15 @@ export const buttonHeaders = {
   disableshadow: 'Disable shadow',
   disabled: 'Default(disabled)',
   textDisabled: 'Variant text(disabled)',
-  startIcon: 'Start icon local_grocery_store',
-  endIcon: 'End icon local_grocery_store',
+  startIcon: 'Start icon ',
+  endIcon: 'End icon ',
   sm: 'Button size sm',
   md: 'Button size md',
   lg: 'Button size lg',
-  colorDefault: 'Button color default',
-  colorPrimary: 'Button color primary',
-  colorSecundary: 'Button color secundary',
-  colorDanger: 'Button color danger',
+  colorDefault: 'Color default',
+  colorPrimary: 'Color primary',
+  colorSecundary: 'Color secundary',
+  colorDanger: 'Color danger',
 };
 
 export const selectStyle = [

@@ -26,7 +26,7 @@ const ButtonsShowcase = () => {
       </div>
       <div className="button-container" id="disabled-button">
         <p className="headline">{buttonHeaders.textDisabled}</p>
-        <Button variant="text" disabled={true} />
+        <Button variant="text" disabled={true} size="sm" />
       </div>
       <div className="button-container" id="default-button">
         <p className="headline">{buttonHeaders.startIcon}</p>

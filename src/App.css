@@ -122,6 +122,7 @@
 
 .color-selector-container {
   display: flex;
+  padding: 1rem 0 1rem 0;
 }
 
 .color-selector {
@@ -156,6 +157,11 @@
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .color-selector-container {
+    margin-bottom: 2rem;
+  }
+}
 .icon-picker-container {
   display: flex;
   padding: 0 1rem 1rem 1rem;
@@ -187,6 +193,11 @@
   border: 1px solid #27ae60;
 }
 
+@media screen and (max-width: 768px) {
+  .icon-picker-container {
+    flex-direction: column;
+  }
+}
 .buttons-display-container {
   background-color: #f3f3f3;
   display: flex;
@@ -255,6 +266,11 @@ h1 {
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .custom-button-container h1 {
+    margin-top: 2rem;
+  }
+}
 
 .button-container {
   padding: 3rem;
@@ -266,10 +282,15 @@ h1 {
 .button-container .headline {
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .button-container {
+    padding: 2rem 1rem 0rem 1rem;
+  }
+}
 
 .select-input-container {
   display: flex;
-  padding-top: 1rem;
+  padding-top: 2rem;
   align-items: center;
   justify-content: center;
 }

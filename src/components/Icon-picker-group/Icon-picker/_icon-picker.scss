@@ -32,3 +32,10 @@
     border: 1px solid #27ae60;
   }
 }
+
+//Mobile styles
+@media screen and (max-width: 768px) {
+  .icon-picker-container {
+    flex-direction: column;
+  }
+}
