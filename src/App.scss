@@ -3,6 +3,7 @@
 @use './components/Icon-picker-group/Icon-picker/icon-picker';
 @use './components/Buttons-showcase/Buttons-showcase';
 @use './components/Select/Select';
+@use './components/Footer/Footer';
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 
@@ -54,7 +55,7 @@ h1 {
 }
 
 .button-container {
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
