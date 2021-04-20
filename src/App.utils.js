@@ -1,9 +1,11 @@
 export const handleSelects = (e, button, setbutton) => {
+  const VariantButton = e.target.name === 'variant' && { color: '' };
   const changeSelect = {
     ...button,
+    ...VariantButton,
     [e.target.name]: e.target.value,
-    color: '',
   };
+
   setbutton(changeSelect);
 };
 
@@ -13,12 +15,4 @@ export const handleCheckBoxes = (e, button, setbutton) => {
     [e.target.name]: e.target.checked,
   };
   setbutton(changeCheckBoxes);
-};
-
-export const handleColorPicker = (e, button, setbutton) => {
-  const changeButtonColor = {
-    ...button,
-    [e.target.name]: e.target.value,
-  };
-  setbutton(changeButtonColor);
 };

@@ -11,11 +11,7 @@ import ButtonsShowcase from './components/Buttons-showcase/Index';
 
 //Utilities
 import { selectStyle, selectSize } from './Data';
-import {
-  handleSelects,
-  handleCheckBoxes,
-  handleColorPicker,
-} from './App.utils';
+import { handleSelects, handleCheckBoxes } from './App.utils';
 
 function App() {
   const [button, setbutton] = useState({
@@ -30,10 +26,7 @@ function App() {
 
   const selectHandler = (e) => {
     handleSelects(e, button, setbutton);
-  };
-
-  const colorPickerHandler = (e) => {
-    handleColorPicker(e, button, setbutton);
+    console.log(e.target.name);
   };
 
   const checkBoxHandler = (e) => {
@@ -108,7 +101,7 @@ function App() {
           <ColorPickerBox
             button={button}
             setbutton={setbutton}
-            handleColorPicker={colorPickerHandler}
+            handleColorPicker={selectHandler}
           />
         )}
       </div>
