@@ -15,7 +15,7 @@ const Button = ({
       disabled={disabled}
     >
       {leftIcon && <span className="material-icons">{leftIcon}</span>}
-      <p>{variant}</p>
+      <p>Default</p>
       {rightIcon && <span className="material-icons">{rightIcon}</span>}
     </button>
   );
