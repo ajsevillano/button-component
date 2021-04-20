@@ -263,6 +263,9 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+.button-container .headline {
+  margin-bottom: 1rem;
+}
 
 .select-input-container {
   display: flex;

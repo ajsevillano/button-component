@@ -53,6 +53,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .headline {
+    margin-bottom: 1rem;
+  }
 }
 
 .select-input-container {
