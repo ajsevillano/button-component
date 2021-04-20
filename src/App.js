@@ -19,8 +19,8 @@ function App() {
     boxShadow: false,
     disabled: false,
     color: 'Default',
-    leftIcon: false,
-    rightIcon: false,
+    leftIcon: '',
+    rightIcon: '',
     size: 'sm',
   });
 
