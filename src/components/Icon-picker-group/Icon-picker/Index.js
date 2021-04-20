@@ -1,5 +1,3 @@
-import React from 'react';
-
 const IconPicker = ({ icon, button, setbutton, side, reset }) => {
   const handleIconPicker = () => {
     const changeButtonIcon = !reset

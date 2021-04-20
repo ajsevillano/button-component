@@ -1,4 +1,3 @@
-import React from 'react';
 import { buttonHeaders } from '../../Data';
 import Button from '../Button/Index';
 
