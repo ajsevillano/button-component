@@ -62,14 +62,14 @@ function App() {
         </div>
         <div className="checkbox-input-container">
           <Input
-            label="Box shadow?"
+            label="Box shadow"
             name="boxShadow"
             checked={button.boxShadow}
             handleInput={checkBoxHandler}
           />
           <Input
             name="disabled"
-            label="Disabled?"
+            label="Disabled"
             checked={button.disabled}
             handleInput={checkBoxHandler}
           />
