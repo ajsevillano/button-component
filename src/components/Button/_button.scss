@@ -18,6 +18,7 @@
   &:hover {
     cursor: pointer;
   }
+
   &:disabled {
     background: #e0e0e0;
     color: #9e9e9e;
@@ -42,10 +43,12 @@
   border: 1px solid #3d5afe;
   border-radius: 6px;
   color: #3d5afe;
+
   &:hover,
   :focus {
     background: rgba(41, 98, 255, 0.1);
   }
+
   &:disabled {
     border: none;
   }
@@ -56,10 +59,12 @@
   background-color: transparent;
   border: none;
   border-radius: 6px;
+
   &:hover,
   :focus {
     background: rgba(41, 98, 255, 0.1);
   }
+
   &:disabled {
     background-color: transparent;
   }
