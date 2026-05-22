@@ -14,6 +14,10 @@
 
 ---
 
+## Preview
+
+![Custom button component screenshot](docs/screenshot.png)
+
 ## Overview
 
 This project was built as a submission to the **Reusable Button Component** challenge on [devChallenges.io](https://devchallenges.io/). It features a live interactive playground to configure and preview the button in real time, plus a showcase of all available variants.
