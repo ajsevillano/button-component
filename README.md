@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# button-challenge
 
-## Available Scripts
+[![React](https://img.shields.io/badge/React-17-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
+[![Challenge](https://img.shields.io/badge/devChallenges.io-Reusable%20UI-8B5CF6)](https://devchallenges.io/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-In the project directory, you can run:
+**🎨 A fully customizable React button component — built for the devChallenges.io competition 🏆**
 
-### `npm start`
+[View Challenge](https://devchallenges.io/) · [Live Demo](#)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</div>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was built as a submission to the **Reusable Button Component** challenge on [devChallenges.io](https://devchallenges.io/). It features a live interactive playground to configure and preview the button in real time, plus a showcase of all available variants.
 
-### `npm run build`
+The `Button` component supports 4 colors, 3 sizes, 3 variants, left/right icons, box shadow, and disabled state — all controlled through clean props.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 🎨 **4 color variants** — Default, Primary, Secondary, Danger
+- 📐 **3 sizes** — `sm`, `md`, `lg`
+- 🖼️ **3 style variants** — Default, Outline, Text
+- 🔲 **Box shadow** toggle
+- 🔕 **Disabled** state
+- 🔣 **Material Icons** support — left and/or right icon
+- 🖱️ **Live playground** — interactive UI to configure and preview the button
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Quick Start
 
-### `npm run eject`
+```bash
+# Install dependencies
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Start the dev server
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open [http://localhost:3000](http://localhost:3000) to use the interactive playground.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🔧 Button Component API
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```jsx
+import Button from './components/Button';
 
-## Learn More
+<Button
+  variant="default"     // "default" | "outline" | "text"
+  color="primary"       // "default" | "primary" | "secundary" | "danger"
+  size="md"             // "sm" | "md" | "lg"
+  boxShadow={true}      // boolean
+  disabled={false}      // boolean
+  leftIcon="home"       // Material Icon name (optional)
+  rightIcon="shopping_cart" // Material Icon name (optional)
+/>
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Props
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Prop | Type | Values | Description |
+|------|------|--------|-------------|
+| `variant` | `string` | `default`, `outline`, `text` | Visual style of the button |
+| `color` | `string` | `default`, `primary`, `secundary`, `danger` | Color theme |
+| `size` | `string` | `sm`, `md`, `lg` | Button size |
+| `boxShadow` | `boolean` | `true`, `false` | Adds drop shadow |
+| `disabled` | `boolean` | `true`, `false` | Disables interaction |
+| `leftIcon` | `string` | Any [Material Icon](https://fonts.google.com/icons) name | Icon before label |
+| `rightIcon` | `string` | Any [Material Icon](https://fonts.google.com/icons) name | Icon after label |
 
-### Code Splitting
+## 🏗️ Built With
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [React 17](https://reactjs.org/)
+- [SCSS](https://sass-lang.com/)
+- [Material Icons](https://fonts.google.com/icons)
+- [Create React App](https://create-react-app.dev/)
 
-### Analyzing the Bundle Size
+## 🏆 Challenge
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is a solution to the [Reusable Button Component](https://devchallenges.io/) challenge on **devChallenges.io** — a platform for developers to practice frontend skills through real-world UI challenges.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  Made with ❤️ for <a href="https://devchallenges.io/">devChallenges.io</a>
+</div>
