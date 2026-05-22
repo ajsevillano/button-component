@@ -8,7 +8,7 @@
 
 **🎨 A fully customizable React button component — built for the devChallenges.io competition 🏆**
 
-[View Challenge](https://devchallenges.io/) · [Live Demo](#)
+[View Challenge](https://devchallenges.io/) · [Live Demo](https://button-component-display.netlify.app/)
 
 </div>
 
